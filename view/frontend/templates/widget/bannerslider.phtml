@@ -1,0 +1,6 @@
+<div class="atopt-bannerslider widget-bannerslider">
+    <?php
+    $sliderId = $block->getData('slider');
+    echo $this->getLayout()->createBlock("Atopt\Slider\Block\SliderItem")->setSliderId($sliderId)->toHtml();
+    ?>
+</div>
